@@ -203,6 +203,14 @@
     <Compile Include="Migrations\201703221531449_initialize.Designer.cs">
       <DependentUpon>201703221531449_initialize.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703232339521_fixed db.cs" />
+    <Compile Include="Migrations\201703232339521_fixed db.Designer.cs">
+      <DependentUpon>201703232339521_fixed db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703240307596_Accountviewtable.cs" />
+    <Compile Include="Migrations\201703240307596_Accountviewtable.Designer.cs">
+      <DependentUpon>201703240307596_Accountviewtable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Global.asax.cs">
@@ -302,6 +310,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703221531449_initialize.resx">
       <DependentUpon>201703221531449_initialize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703232339521_fixed db.resx">
+      <DependentUpon>201703232339521_fixed db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703240307596_Accountviewtable.resx">
+      <DependentUpon>201703240307596_Accountviewtable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

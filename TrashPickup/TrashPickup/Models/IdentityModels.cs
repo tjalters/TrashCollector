@@ -40,6 +40,7 @@ namespace TrashPickup.Models
             return new ApplicationDbContext();
         }
         public Address addresses { get; set; }
-        public System.Data.Entity.DbSet<TrashPickup.Models.Customer> Customers { get; set; }
+        //public System.Data.Entity.DbSet<TrashPickup.Models.Customer> Customers { get; set; }
+        public DbSet<RegisterViewModel> UserRegistration { get; set; }
     }
 }
