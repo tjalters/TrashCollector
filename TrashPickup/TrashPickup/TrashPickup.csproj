@@ -215,17 +215,28 @@
     <Compile Include="Migrations\201703241406420_customer.Designer.cs">
       <DependentUpon>201703241406420_customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703241637058_Day.cs" />
+    <Compile Include="Migrations\201703241637058_Day.Designer.cs">
+      <DependentUpon>201703241637058_Day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241641277_Week.cs" />
+    <Compile Include="Migrations\201703241641277_Week.Designer.cs">
+      <DependentUpon>201703241641277_Week.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Day.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\NewCustomerViewModel.cs" />
+    <Compile Include="Models\SetWeeklySchedule.cs" />
+    <Compile Include="Models\Week.cs" />
     <Compile Include="Models\Zip.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -323,6 +334,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703241406420_customer.resx">
       <DependentUpon>201703241406420_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241637058_Day.resx">
+      <DependentUpon>201703241637058_Day.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241641277_Week.resx">
+      <DependentUpon>201703241641277_Week.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
