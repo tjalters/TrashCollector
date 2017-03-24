@@ -17,11 +17,11 @@ namespace TrashPickup.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-        public ApplicationDbContext context;
+        //public ApplicationDbContext context;
 
         public AccountController()
         {
-            context = new ApplicationDbContext();
+            //context = new ApplicationDbContext();
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
@@ -141,11 +141,11 @@ namespace TrashPickup.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Customer"))
-                .ToList(), "Name", "Name");
+            //ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Customer"))
+            //    .ToList(), "Name", "Name");
 
-            ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Employee"))
-                .ToList(), "Name", "Name");
+            //ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Employee"))
+            //    .ToList(), "Name", "Name");
 
             return View();
         }
@@ -175,12 +175,12 @@ namespace TrashPickup.Controllers
 
                     return RedirectToAction("Index", "Home");
                 }
-                ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Customer"))
-                                            .ToList(), "Name", "Name");
-                    AddErrors(result);
+                //ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Customer"))
+                //                            .ToList(), "Name", "Name");
+                //    AddErrors(result);
 
-                ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Employee"))
-                                            .ToList(), "Name", "Name");
+                //ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Employee"))
+                //                            .ToList(), "Name", "Name");
                 AddErrors(result);
             }
 

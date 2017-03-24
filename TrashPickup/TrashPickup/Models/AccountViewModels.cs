@@ -64,9 +64,9 @@ namespace TrashPickup.Models
 
     public class RegisterViewModel
     {
-        [Required]
-        [Display(Name = "UserRoles")]
-        public string UserRoles { get; set; }
+        //[Required]
+        //[Display(Name = "UserRoles")]
+        //public string UserRoles { get; set; }
 
         [Required]
         [Display(Name = "Name")]
@@ -93,7 +93,7 @@ namespace TrashPickup.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Required]
+        //[Required]
         [Display(Name = "Username")]
         public string Username { get; set; }
 

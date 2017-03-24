@@ -211,6 +211,10 @@
     <Compile Include="Migrations\201703240307596_Accountviewtable.Designer.cs">
       <DependentUpon>201703240307596_Accountviewtable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703241406420_customer.cs" />
+    <Compile Include="Migrations\201703241406420_customer.Designer.cs">
+      <DependentUpon>201703241406420_customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Global.asax.cs">
@@ -316,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703240307596_Accountviewtable.resx">
       <DependentUpon>201703240307596_Accountviewtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241406420_customer.resx">
+      <DependentUpon>201703241406420_customer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
