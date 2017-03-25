@@ -10,6 +10,14 @@ namespace TrashPickup.Controllers
     {
         public ActionResult Index()
         {
+            if (User.IsInRole("Customer"))
+            {
+                return RedirectToAction("Home", "Customer");
+            }
+            if (User.IsInRole("Employee"))
+            {
+                return RedirectToAction("Home", "Employee");
+            }
             return View();
         }
 
@@ -22,7 +30,7 @@ namespace TrashPickup.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Trash Pick-Up Schedule";
 
             return View();
         }

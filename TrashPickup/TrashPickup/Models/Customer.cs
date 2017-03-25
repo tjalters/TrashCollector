@@ -8,9 +8,9 @@ namespace TrashPickup.Models
 {
     public class Customer
     {
-        [Key]
-        public int Id { get; set; }
-        public string name { get; set; }
+        //[Key]
+        //public int Id { get; set; }
+        //public string name { get; set; }
 
         //public MembershipType MembershipType { get; set; }
 

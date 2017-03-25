@@ -12,9 +12,17 @@ namespace TrashPickup.Models
         [Key]
 
         public int ScheduleId { get; set; }
-        [ForeignKey("Week")]
-        public int Week { get; set; }
+        //[ForeignKey("Week")]
+        //public int week { get; set; }
+        //public Week Week { get; set; }
         [ForeignKey("Day")]
-        public int Day { get; set; }
+        public int day { get; set; }
+        public Day Day { get; set; }
+        public string Email { get; set; }
+
     }
 }
+
+//public Application User {get; , set;}
+//[FOreignKey("User"]
+//public int UserId {get; set; }

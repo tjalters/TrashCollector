@@ -12,9 +12,13 @@ namespace TrashPickup.Controllers
 {
     public class CustomersController : Controller
     {
-        public string Index()
+        public ActionResult Index()
         {
-            return "Employee Page";
+            return View();
+        }
+        public ActionResult Home()
+        {
+            return View();
         }
         //private ApplicationDbContext db = new ApplicationDbContext();
 

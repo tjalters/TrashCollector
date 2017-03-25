@@ -8,10 +8,10 @@ namespace TrashPickup.Models
 {
     public class Employee
     {
-        [Key]
+        //[Key]
 
-        public int Id { get; set; }
-        public string name { get; set; }
+        //public int Id { get; set; }
+        //public string name { get; set; }
 
     }
 }

@@ -43,7 +43,7 @@ namespace TrashPickup.Models
         //public System.Data.Entity.DbSet<TrashPickup.Models.Customer> Customers { get; set; }
         public DbSet<RegisterViewModel> UserRegistration { get; set; }
         public DbSet<Day> Days { get; set; }
-        public DbSet<Week> Weeks { get; set; }
+        //public DbSet<Week> Weeks { get; set; }
         public DbSet<SetWeeklySchedule> WeeklySchedule { get; set; }
     }
 }

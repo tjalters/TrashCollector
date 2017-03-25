@@ -3,7 +3,7 @@ namespace TrashPickup.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Week : DbMigration
+    public partial class Customer : DbMigration
     {
         public override void Up()
         {

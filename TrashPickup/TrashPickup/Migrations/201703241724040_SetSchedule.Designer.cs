@@ -7,13 +7,13 @@ namespace TrashPickup.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Week : IMigrationMetadata
+    public sealed partial class SetSchedule : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Week));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(SetSchedule));
         
         string IMigrationMetadata.Id
         {
-            get { return "201703241641277_Week"; }
+            get { return "201703241724040_SetSchedule"; }
         }
         
         string IMigrationMetadata.Source
