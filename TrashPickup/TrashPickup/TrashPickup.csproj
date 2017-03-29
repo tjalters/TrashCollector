@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ChooseDaysController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -212,10 +213,6 @@
     <Compile Include="Migrations\201703240307596_Accountviewtable.Designer.cs">
       <DependentUpon>201703240307596_Accountviewtable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703241406420_customer.cs" />
-    <Compile Include="Migrations\201703241406420_customer.Designer.cs">
-      <DependentUpon>201703241406420_customer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201703241637058_Day.cs" />
     <Compile Include="Migrations\201703241637058_Day.Designer.cs">
       <DependentUpon>201703241637058_Day.cs</DependentUpon>
@@ -224,9 +221,29 @@
     <Compile Include="Migrations\201703241724040_SetSchedule.Designer.cs">
       <DependentUpon>201703241724040_SetSchedule.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703242354009_Customer.cs" />
-    <Compile Include="Migrations\201703242354009_Customer.Designer.cs">
-      <DependentUpon>201703242354009_Customer.cs</DependentUpon>
+    <Compile Include="Migrations\201703250010187_Customer.cs" />
+    <Compile Include="Migrations\201703250010187_Customer.Designer.cs">
+      <DependentUpon>201703250010187_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703281615349_choose day.cs" />
+    <Compile Include="Migrations\201703281615349_choose day.Designer.cs">
+      <DependentUpon>201703281615349_choose day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703281620287_update choose day.cs" />
+    <Compile Include="Migrations\201703281620287_update choose day.Designer.cs">
+      <DependentUpon>201703281620287_update choose day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703281726341_updatedModels.cs" />
+    <Compile Include="Migrations\201703281726341_updatedModels.Designer.cs">
+      <DependentUpon>201703281726341_updatedModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703282253228_choose day2.cs" />
+    <Compile Include="Migrations\201703282253228_choose day2.Designer.cs">
+      <DependentUpon>201703282253228_choose day2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703282314402_DayId.cs" />
+    <Compile Include="Migrations\201703282314402_DayId.Designer.cs">
+      <DependentUpon>201703282314402_DayId.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
@@ -234,11 +251,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ChooseDay.cs" />
     <Compile Include="Models\Day.cs" />
+    <Compile Include="Models\DropDown.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\NewCustomerViewModel.cs" />
     <Compile Include="Models\SetWeeklySchedule.cs" />
     <Compile Include="Models\Zip.cs" />
@@ -314,6 +333,11 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Home.cshtml" />
     <Content Include="Views\Employee\Home.cshtml" />
+    <Content Include="Views\ChooseDays\Create.cshtml" />
+    <Content Include="Views\ChooseDays\Delete.cshtml" />
+    <Content Include="Views\ChooseDays\Details.cshtml" />
+    <Content Include="Views\ChooseDays\Edit.cshtml" />
+    <Content Include="Views\ChooseDays\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -338,17 +362,29 @@
     <EmbeddedResource Include="Migrations\201703240307596_Accountviewtable.resx">
       <DependentUpon>201703240307596_Accountviewtable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703241406420_customer.resx">
-      <DependentUpon>201703241406420_customer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703241637058_Day.resx">
       <DependentUpon>201703241637058_Day.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703241724040_SetSchedule.resx">
       <DependentUpon>201703241724040_SetSchedule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703242354009_Customer.resx">
-      <DependentUpon>201703242354009_Customer.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703250010187_Customer.resx">
+      <DependentUpon>201703250010187_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703281615349_choose day.resx">
+      <DependentUpon>201703281615349_choose day.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703281620287_update choose day.resx">
+      <DependentUpon>201703281620287_update choose day.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703281726341_updatedModels.resx">
+      <DependentUpon>201703281726341_updatedModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703282253228_choose day2.resx">
+      <DependentUpon>201703282253228_choose day2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703282314402_DayId.resx">
+      <DependentUpon>201703282314402_DayId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -3,7 +3,7 @@
     ViewBag.Title = "Home";
 }
 
-<div class="jumbotron">
+@*<div class="jumbotron">
     <h1>Customers</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
@@ -27,6 +27,33 @@
     <div class="col-md-4">
         <h2>Web Hosting</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>**@
+<div class="jumbotron">
+    <h1>Trash Pickup Service</h1>
+    <p class="lead">Welcome Back!</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Schedule</h2>
+        <p>
+            Select what day you would like your trash picked up. You can also choose the frequency of pickup.
+        </p>
+        <p>@Html.ActionLink("Schedule now!", "Schedule")</p>
+
+
+
+    </div>
+    <div class="col-md-4">
+        <h2>Suspend Services</h2>
+        <p>You can choose dates to skip if you are on vacation, and you won't be charged for services.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Invoice</h2>
+        <p>You can view how much you owe this month for pickups.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>

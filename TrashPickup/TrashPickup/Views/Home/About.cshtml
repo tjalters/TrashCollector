@@ -1,7 +1,11 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Trash PickUp Schedule";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+
+@Html.DropDownList("MyDropDown",(SelectList) ViewBag.DropDownValues)
+
+<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
 
 <p>Use this area to provide additional information.</p>

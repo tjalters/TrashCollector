@@ -8,6 +8,6 @@ namespace TrashPickup.Models
     public class NewCustomerViewModel
     {
         //public IEnumerable<MembershipType> MembershipTypes { get; set; }
-        public Customer customer { get; set; }
+        public Customers customer { get; set; }
     }
 }

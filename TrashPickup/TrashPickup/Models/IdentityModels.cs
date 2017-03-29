@@ -21,6 +21,9 @@ namespace TrashPickup.Models
             public string City { get; set; }
             public int ZipCode { get; set; }
             public string Name { get; set; }
+
+            public int DayId { get; set; }
+
             //public double PhoneNumber { get; set; }
 
         
@@ -41,9 +44,10 @@ namespace TrashPickup.Models
         }
         //public Address addresses { get; set; }
         //public System.Data.Entity.DbSet<TrashPickup.Models.Customer> Customers { get; set; }
-        public DbSet<RegisterViewModel> UserRegistration { get; set; }
         public DbSet<Day> Days { get; set; }
         //public DbSet<Week> Weeks { get; set; }
         public DbSet<SetWeeklySchedule> WeeklySchedule { get; set; }
+
+        public DbSet<ChooseDay> ChooseDays { get; set; }
     }
 }

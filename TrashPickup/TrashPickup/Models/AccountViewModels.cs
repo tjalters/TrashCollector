@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TrashPickup.Models
 {
@@ -87,7 +88,11 @@ namespace TrashPickup.Models
         [Display(Name = "Zip Code")]
         public int ZipCode { get; set; }
 
-        [Key]
+        [Required]
+        [Display(Name = "PickUp Day")]
+        public int DayId { get; set; }
+
+       
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
